@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textColor="#00FF00"
+        android:layout_below="@id/brr"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/sup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/correct"
+        android:visibility="gone"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="What makes true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#FF0000"
+        android:layout_below="@id/brr"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/XD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wrong"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/box1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/BOX"
+        android:onClick="bad"
+        android:layout_centerInParent="true"
+        android:text="false" />
+
+    <CheckBox
+        android:id="@+id/BOX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="iets"
+        android:text="true" />
+
+    <Button
+        android:id="@+id/brr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BOX"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="135dp"
+        android:onClick="bruh"
+        android:text="button" />
+
+
+</RelativeLayout>

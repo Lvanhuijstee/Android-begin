@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UserInputP2</string>
+    <string name="text">text</string>
+    <string name="text2">text2</string>
+    <string name="correct">Correct</string>
+    <string name="wrong">Wrong</string>
+</resources>
