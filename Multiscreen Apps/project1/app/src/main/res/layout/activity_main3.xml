@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/resize" />
+
+    <TextView
+        android:background="#98AFC7"
+        android:textColor="@color/black"
+        android:id="@+id/header1"
+        android:textSize="23sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:text="Fun forest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/tab1"
+        android:visibility="gone"
+        android:background="#DA231E1E"
+        android:layout_below="@id/header1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/funForest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header1"
+        android:text="@string/infofun"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/previous1"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:onClick="back"
+        android:visibility="visible"
+        android:layout_marginLeft="10dp"
+        android:text="@string/back" />
+
+    <Button
+        android:id="@+id/home1"
+        android:text="home"
+        android:onClick="home1"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/info3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="open1"
+        android:text="informatie"
+        />
+
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/sluiten1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sluiten1"
+        android:text="sluiten"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

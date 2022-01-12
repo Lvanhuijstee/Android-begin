@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <ImageView
+        android:src="@drawable/kemphaan1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/third"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_width="208dp"
+        android:layout_height="346dp"
+        android:layout_above="@id/first"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/resize" />
+
+    <ImageView
+        android:layout_width="203dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/first"
+        android:layout_marginBottom="-5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/floriade" />
+
+    <TextView
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:text="attracties almere buiten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:onClick="goFirst"
+        android:text="kemphaan" />
+
+    <Button
+        android:text="floriade"
+        android:layout_marginTop="22dp"
+        android:layout_below="@id/first"
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goSecond"/>
+
+    <Button
+        android:text="fun forest "
+        android:layout_marginTop="22dp"
+        android:layout_below="@id/second"
+        android:id="@+id/third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goThird"/>
+
+</RelativeLayout>

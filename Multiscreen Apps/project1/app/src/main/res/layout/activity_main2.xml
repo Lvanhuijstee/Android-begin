@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/floriade" />
+
+    <TextView
+        android:id="@+id/header"
+        android:textSize="23sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:text="Floriade Expo 2022"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/tab"
+        android:visibility="gone"
+        android:background="#DA231E1E"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/floriade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:text="@string/infof"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/previous"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:onClick="back"
+        android:layout_marginLeft="10dp"
+        android:text="@string/back" />
+
+    <Button
+        android:id="@+id/home"
+        android:text="home"
+        android:onClick="home"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:onClick="open"
+        android:id="@+id/info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="informatie"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="Next"
+        android:text=">"
+        android:textSize="20sp" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/sluiten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sluiten"
+        android:text="sluiten"
+        android:layout_centerInParent="true" />
+
+
+
+</RelativeLayout>

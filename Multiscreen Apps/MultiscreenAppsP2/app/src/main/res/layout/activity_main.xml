@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:text="Music Player"
+        android:textSize="25sp"
+        android:id="@+id/musicplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_below="@id/musicplayer"
+        android:id="@+id/name"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:text="Running in the 90's"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/play_M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="playXD"
+        android:text="play" />
+
+    <Button
+        android:text="+"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Plus1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="plus"/>
+
+    <Button
+        android:text="-"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/min1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="min"/>
+
+
+    <Button
+        android:id="@+id/stop_M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="stop"
+        android:text="Stop" />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pause_M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="pause"
+        android:visibility="gone"
+        android:text="pause" />
+
+</RelativeLayout>
